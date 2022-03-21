@@ -1,4 +1,6 @@
 #include "new.h"
+#include <stdio.h>
+#include <malloc.h>
 
 Node* newList(Node* ptr, Node* new_ptr) {
 	Node head1 = { '*', ptr };
@@ -17,7 +19,7 @@ Node* newList(Node* ptr, Node* new_ptr) {
 	int counter = 0, spaces = 0;
 
 	for (; fst; fst = fst->next) {
-		if (fst->c == tmp) {
+		if (fst->c == tmp && fst->c != 32) {
 			spaces = 0;
 			scd->next = (Node*)malloc(sizeof(Node));
 			scd = scd->next;
