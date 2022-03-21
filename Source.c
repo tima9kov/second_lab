@@ -44,6 +44,8 @@ int main()
 		printf("\n");
 		system("pause");
 		system("cls");
+
+		printf("Hello");
 	}
 	return 0;
 }
