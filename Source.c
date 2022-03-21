@@ -39,6 +39,8 @@ int main()
 		putList("\nNew string    ", new_ptr);
 
 		ptr = deleteList(ptr);
+		new_ptr = deleteList(new_ptr);
+
 		printf("\n");
 		system("pause");
 		system("cls");
